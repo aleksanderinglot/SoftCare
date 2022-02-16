@@ -1,0 +1,812 @@
+section {
+  height: 290px;
+  display: flex;
+  overflow: hidden;
+  min-width: 1024px;
+  max-width: 1980px;
+  margin: 0 auto;
+}
+
+div {
+  user-select: none;
+}
+
+div.name {
+  flex-grow: 2;
+  /* background-color: lightskyblue; */
+  background-color: white;
+  transform: skew(-20deg);
+  margin-left: -60px;
+  position: relative;
+  font-family: roboto;
+}
+
+div.name div.first {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 160px;
+  transform: skew(20deg);
+  letter-spacing: 3px;
+}
+
+div.name div.copyright {
+  position: absolute;
+  top: -220px;
+  left: 430px;
+  transform: skew(20deg) scale(0.05);
+}
+
+.wrapper
+{
+	padding-bottom: 90px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 250px;
+	height: 1px;
+  animation: handanimation 3.6s linear both;
+  animation-delay: .5s;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 12%;
+	right: 5%;
+	width: 33%;
+	height: 2px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+div.name div.second {
+  position: absolute;
+  top: 210px;
+  left: 120px;
+  font-size: 26px;
+  transform: skew(20deg);
+  text-transform: uppercase;
+  animation: handanimation 3.6s linear both;
+  animation-delay: .5s;
+}
+
+div.name div.plus img {
+  transform: skew(20deg) scale(0.8);
+  position: absolute;
+  top: 40px;
+  left: 760px;
+  max-width: 120px;
+  animation: plusanimation 1.2s linear both;
+  animation-delay: .5s;
+}
+
+div.name div.heart img {
+  transform: skew(20deg) scale(0.9);
+  position: absolute;
+  top: 50px;
+  left: 880px;
+  max-width: 120px;
+  animation: heartanimation 2.4s linear both;
+  animation-delay: .5s;
+}
+
+div.name div.hand img {
+  transform: skew(20deg) scale(1.25);
+  position: absolute;
+  top: 175px;
+  left: 860px;
+  max-width: 120px;
+  animation: handanimation 3.6s linear both;
+  animation-delay: .5s;
+}
+
+div.image {
+  overflow: hidden;
+  flex-grow: 1;
+  transform: skew(-20deg);
+  position: relative;
+}
+
+div.image div.firstimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  transform: skew(20deg);
+  width: 150%;
+  height: 100%;
+  background: url(../../assets/lekarze.jpg);
+  background-position: cover;
+  background-size: 75%;
+  animation: photoanimation 20s infinite linear;
+}
+
+div.image div.secondimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  transform: skew(20deg) scale(1.4);
+  width: 150%;
+  height: 100%;
+  background: url(../../assets/rtg.jpg);
+  background-position: 140px 50px;
+  background-size: 50%;
+  animation: photoanimation2 20s infinite linear;
+}
+
+div.image div.thirdimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  transform: skew(20deg) scale(1.44);
+  width: 150%;
+  height: 100%;
+  background: url(../../assets/prywatnekonsultacje.jpg);
+  background-position: 130px 30px;
+  background-size: 50%;
+  animation: photoanimation3 20s infinite linear;
+}
+
+div.image div.fourthimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  transform: skew(20deg) scale(1.2);
+  width: 150%;
+  height: 100%;
+  background: url(../../assets/sprzetmedyczny.jpg);
+  background-position: 130px 0;
+  background-size: 50%;
+  animation: photoanimation4 20s infinite linear;
+}
+
+div.text {
+  flex-grow: 1;
+  background-color: red;
+  transform: skew(-20deg);
+  margin-right: -60px;
+  display: flex;
+  position: relative;
+  font-size: 43px;
+}
+
+div.text div.firsttext {
+  position: absolute;
+  top: 40px;
+  left: 72px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation1 20s infinite linear;
+}
+
+div.text div.secondtext {
+  position: absolute;
+  top: 120px;
+  left: 212px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation2 20s infinite linear;
+}
+
+div.text div.thirdtext {
+  position: absolute;
+  top: 230px;
+  left: 52px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation3 20s infinite linear;
+}
+
+div.text div.fourthtext {
+  position: absolute;
+  top: 40px;
+  left: 72px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation4 20s infinite linear;
+}
+
+div.text div.fifthtext {
+  position: absolute;
+  top: 120px;
+  left: 212px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation5 20s infinite linear;
+}
+
+div.text div.sixthtext {
+  position: absolute;
+  top: 110px;
+  left: -90px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation6 20s infinite linear;
+}
+
+div.text div.seventhtext {
+  position: absolute;
+  top: 40px;
+  left: 72px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation7 20s infinite linear;
+}
+
+div.text div.eighthtext {
+  position: absolute;
+  top: 120px;
+  left: 212px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation8 20s infinite linear;
+}
+
+div.text div.ninthtext {
+  position: absolute;
+  top: 230px;
+  left: 52px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation9 20s infinite linear;
+}
+
+div.text div.tenthtext {
+  position: absolute;
+  top: 40px;
+  left: 72px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation10 20s infinite linear;
+}
+
+div.text div.eleventhtext {
+  position: absolute;
+  top: 120px;
+  left: 212px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation11 20s infinite linear;
+}
+
+div.text div.twelfthtext {
+  position: absolute;
+  top: 70px;
+  left: -280px;
+  text-align: center;
+  transform: skew(20deg);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  animation: textanimation12 20s infinite linear;
+}
+
+@keyframes textanimation1 {
+  0% {
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  8% {
+    opacity: .8;
+  }
+
+  17% {
+    opacity: .8;
+  }
+
+  25% {
+    left: 60px;
+    top: 50px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation2 {
+  0% {
+    left: 160px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  8% {
+    opacity: .8;
+  }
+
+  17% {
+    opacity: .8;
+  }
+
+  25% {
+    left: 60px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes textanimation3 {
+  0% {
+    left: 30px;
+    transform: skew(20deg) scale(1);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: .8;
+  }
+
+  17% {
+    opacity: .8;
+  }
+
+  25% {
+    left: 100px;
+    top: 190px;
+    transform: skew(20deg) scale(1.1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation4 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    left: 80px;
+    top: 20px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  33% {
+    opacity: .8;
+  }
+
+  42% {
+    opacity: .8;
+  }
+
+  50% {
+    left: 40px;
+    top: 30px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation5 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    top: 120px;
+    left: 80px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  33% {
+    opacity: .8;
+  }
+
+  42% {
+    opacity: .8;
+  }
+
+  50% {
+    top: 120px;
+    left: 170px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation6 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    transform: skew(20deg) scale(1);
+    opacity: 0;
+  }
+
+  33% {
+    opacity: .8;
+  }
+
+  42% {
+    opacity: .8;
+  }
+
+  50% {
+    left: 140px;
+    top: 220px;
+    transform: skew(20deg) scale(1.1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation7 {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  58% {
+    opacity: .8;
+  }
+
+  67% {
+    opacity: .8;
+  }
+
+  75% {
+    left: 60px;
+    top: 50px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation8 {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    left: 160px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  58% {
+    opacity: .8;
+  }
+
+  67% {
+    opacity: .8;
+  }
+
+  75% {
+    left: 60px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation9 {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    left: 30px;
+    transform: skew(20deg) scale(1);
+    opacity: 0;
+  }
+
+  58% {
+    opacity: .8;
+  }
+
+  67% {
+    opacity: .8;
+  }
+
+  75% {
+    left: 100px;
+    top: 190px;
+    transform: skew(20deg) scale(1.1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textanimation10 {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    left: 80px;
+    top: 20px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  83% {
+    opacity: .8;
+  }
+
+  92% {
+    opacity: .8;
+  }
+
+  100% {
+    left: 40px;
+    top: 30px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+}
+
+@keyframes textanimation11 {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 120px;
+    left: 80px;
+    opacity: 0;
+    transform: skew(20deg) scale(1);
+  }
+
+  83% {
+    opacity: .8;
+  }
+
+  92% {
+    opacity: .8;
+  }
+
+  100% {
+    top: 120px;
+    left: 160px;
+    opacity: 0;
+    transform: skew(20deg) scale(1.2);
+  }
+}
+
+@keyframes textanimation12 {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    transform: skew(20deg) scale(1);
+    opacity: 0;
+  }
+
+  83% {
+    opacity: .8;
+  }
+
+  92% {
+    opacity: .8;
+  }
+
+  100% {
+    left: 200px;
+    top: 220px;
+    transform: skew(20deg) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes plusanimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heartanimation {
+  0% {
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes handanimation {
+  0% {
+    opacity: 0;
+  }
+
+  67% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes photoanimation {
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: skew(20deg) scale(1.15);
+  }
+}
+
+@keyframes photoanimation2 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: skew(20deg) scale(1.6);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes photoanimation3 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  58% {
+    opacity: 1;
+  }
+
+  67% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+    transform: skew(20deg) scale(1.67);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes photoanimation4 {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  83% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: skew(20deg) scale(1.43);
+  }
+}

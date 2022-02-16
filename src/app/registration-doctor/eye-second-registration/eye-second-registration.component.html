@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <img src="/assets/appointment.png" alt="">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate>
+      <div class="wrapreg">
+        <h1>Zapis do Dr Eye Second</h1>
+        <label for="name">Imię:</label><br>
+        <input type="text" ngModel name="imie" required><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" ngModel name="nazwisko" required><br>
+        <label for="dzien">Dzień:</label><br>
+        <select style="width: 283px; font-size: 16px; border-radius: 5px; margin-right: 12px;" 
+              name="dzien" 
+              id="2"
+              ngModel
+              required
+              >
+        <ng-container *ngFor="let termin of terminy">
+          <option style="font-size: 16px;" [ngValue]="dzien" *ngFor="let dzien of termin.dni">{{ dzien }}</option>
+        </ng-container>
+      </select><br>
+      <label for="godzina">Godzina:</label><br>
+      <select style="width: 283px; font-size: 16px; border-radius: 5px;" name="godzina" id="3" ngModel required>
+        <ng-container *ngFor="let termin of terminy">
+          <option style="font-size: 16px;" [ngValue]="godzina" *ngFor="let godzina of termin.godziny">{{ godzina }}</option>
+        </ng-container>
+      </select><br>
+      <button type="submit">Zapisz się</button>
+      <div *ngIf="isSubmitted" class="info">Zostałeś zapisany na wizytę</div>
+    </div>
+    </form>
+  </div>

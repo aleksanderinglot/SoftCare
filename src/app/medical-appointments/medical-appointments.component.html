@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <img src="/assets/appointment.png" alt="">
+    <div class="wrapperin">
+      <h3>&nbsp;Twoje wizyty:</h3>
+      <table>
+        <tbody>
+          <tr *ngFor="let wizyta of wizyty">
+            <td style="width: 124px;">{{ wizyta.nazwa }}</td>
+            <td>{{ wizyta.imie }} {{ wizyta.nazwisko }}</td>
+            <td>{{ wizyta.dzien }}</td>
+            <td style="width: 40px;">{{ wizyta.godzina }}</td>&nbsp;
+            <button (click)="onClick(wizyta)">Odwołaj wizytę</button>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>

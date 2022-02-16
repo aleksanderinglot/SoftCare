@@ -1,0 +1,15 @@
+<div *ngIf="isAuthenticated" appDirective class="firstasidediv">
+  <div appDirective class="klik"><i class="far fa-arrow-alt-circle-right"></i></div>
+  <div class="headerdiv"><span>Witaj pacjencie!</span><ul>
+      <li>
+        <a (click)="onClick($event)">Twoje wizyty</a>
+      </li>
+      <li>
+        <a (click)="onClick2($event)">Twoje badania</a>
+      </li>
+      <li>
+        <a (click)="onLogout($event)">Wyloguj</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,209 @@
+div.wrap-out {
+  width: 100%;
+  max-width: 1980px;
+  height: 33px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+div.wrap-in {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  line-height: 33px;
+  text-align: center;
+  font-family: roboto;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.wrapin {
+  display: block;
+}
+
+li {
+  flex-grow: 1;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  transition: .5s;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: rgb(255, 58, 58);
+}
+
+a.badania:hover a {
+  background-color: red;
+  display: block;
+}
+
+a.badania a:hover {
+  background-color: rgb(255, 58, 58);
+  
+}
+
+a.badania ul {
+  display: block;
+}
+
+a.badania ul li a {
+  display: block;
+  opacity: 0;
+  transition: .5s;
+}
+
+a.badania:hover ul li a {
+  display: block;
+  opacity: 1;
+}
+
+a.badania:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+a.badania:hover ul li {
+  display: block;
+}
+
+a.specializacje {
+  width: 200px;
+}
+
+a:hover ~ ul li a {
+  background-color: red;
+  display: block;
+}
+
+a.specjalizacje a:hover {
+  background-color: rgb(255, 58, 58);
+  display: block;
+}
+
+ul li ul li a {
+  display: none;
+}
+
+ul li a:hover ~ ul li a {
+  display: block;
+}
+
+ul li a ~ ul:hover li a {
+  display: block;
+  background-color:red;
+}
+
+ul li a ~ ul:hover li a:hover {
+  display: block;
+  background-color: rgb(255, 58, 58);
+}
+
+a.specjalizacje ul li {
+  display: block;
+}
+
+a.specjalizacje ul li a {
+  display: block;
+  opacity: 0;
+  transition: .5s;
+}
+
+a.specjalizacje:hover ul li a {
+  display: block;
+  opacity: 1;
+}
+
+a.specjalizacje:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+a.specjalizacje:hover ul li {
+  display: block;
+}
+
+a.lekarze {
+  width: 200px;
+}
+
+a.lekarze:hover a {
+  background-color: red;
+  display: block;
+}
+
+a.lekarze a:hover {
+  background-color: rgb(255, 58, 58);
+  display: block;
+}
+
+a.lekarze ul {
+  display: block;
+}
+
+a.lekarze ul li a {
+  display: block;
+  opacity: 0;
+  transition: .5s;
+}
+
+a.lekarze:hover ul li a {
+  display: block;
+  opacity: 1;
+}
+
+a.lekarze:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+a.lekarze:hover ul li {
+  display: block;
+}
+
+a:visited {
+  color: white;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider2 {
+  position: relative;
+  top: 33px;
+}
+
+.div-transparent2:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -20px;
+  width: 40px;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(238, 241, 248), transparent);
+  transform: rotate(90deg);
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: calc(100% - 20px);
+  width: 40px;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(238, 241, 248), transparent);
+  transform: rotate(90deg);
+}

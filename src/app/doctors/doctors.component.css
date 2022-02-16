@@ -1,0 +1,12 @@
+.wrapper {
+    position: relative;
+    width: 68%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 22px;
+    font-family: arial;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.678);
+    line-height: 27px;
+    z-index: -1;
+}

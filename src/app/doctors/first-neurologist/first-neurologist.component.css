@@ -1,0 +1,23 @@
+h1 {
+    padding-top: 140px;
+    padding-bottom: 40px;
+    font-size: 42px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+img {
+    margin-top: 140px;
+    margin-right: 80px;
+    width: 270px;
+    float: left;
+    padding: 0 30px 15px 0;
+    border-radius: 7%;
+}
+
+span {
+    display: block;
+    margin-top: 50px;
+    font-weight: bold;
+}

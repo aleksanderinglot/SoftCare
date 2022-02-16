@@ -1,0 +1,28 @@
+.wrapper {
+    width: 67%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 22px;
+    font-family: arial;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.678);
+    line-height: 27px;
+}
+
+h1 {
+    padding-top: 140px;
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+img {
+    margin: 140px 30px 10px 0;
+    width: 490px;
+    float: left;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-size: cover;
+}

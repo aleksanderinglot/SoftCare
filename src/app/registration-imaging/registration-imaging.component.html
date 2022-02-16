@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+
+<div class="wrapper" *ngIf="route.children.length === 0">
+    <img src="../../assets/appointment.png" alt="">
+    <div class="wrapperin">
+        <h1>Wybierz rodzaj badania</h1>
+        <ul>
+            <li><a routerLink="/registration-imaging/roentgen-registration">Badanie RTG</a></li>
+            <li><a routerLink="/registration-imaging/ct-registration">Tomografia komputerowa</a></li>
+            <li><a routerLink="/registration-imaging/mri-registration">Rezonans magnetyczny</a></li>
+        </ul>
+    </div>
+</div>

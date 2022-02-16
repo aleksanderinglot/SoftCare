@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+<div class="wrapper" *ngIf="route.children.length === 0">
+    <img src="../../assets/appointment.png" alt="">
+    <div class="wrapperin">
+        <h1>Wybierz lekarza</h1>
+        <ul>
+            <li><a routerLink="heart-first-registration">Dr Heart First</a></li>
+            <li><a routerLink="heart-second-registration">Dr Heart Second</a></li>
+            <li><a routerLink="ear-first-registration">Dr Ear First</a></li>
+            <li><a routerLink="ear-second-registration">Dr Ear Second</a></li>
+            <li><a routerLink="tooth-first-registration">Dr Tooth First</a></li>
+            <li><a routerLink="tooth-second-registration">Dr Tooth Second</a></li>
+            <li><a routerLink="brain-first-registration">Dr Brain First</a></li>
+            <li><a routerLink="brain-second-registration">Dr Brain Second</a></li>
+            <li><a routerLink="eye-first-registration">Dr Eye First</a></li>
+            <li><a routerLink="eye-second-registration">Dr Eye Second</a></li>
+        </ul>
+    </div>
+</div>

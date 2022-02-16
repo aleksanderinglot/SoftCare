@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 120vh;
+    /* background-color:lightskyblue; */
+    background-color: white;
+    font-family: roboto;
+    overflow-x: hidden;
+    user-select: none;
+}

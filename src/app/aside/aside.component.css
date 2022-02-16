@@ -1,0 +1,110 @@
+div.firstasidediv {
+  position: absolute;
+  top: 323px;
+  right: -10%;
+  width: 10%;
+  height: 86vh;
+  background-color: red;
+  color: white;
+  text-align: center;
+  transition: .5s;
+  pointer-events: none;
+}
+
+div.firstasidediv.open {
+  position: absolute;
+  top: 323px;
+  right: 0;
+  width: 10%;
+  height: 86vh;
+  background-color: red;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  animation: animation .5s;
+}
+
+div.klik {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: .5s;
+  pointer-events: visible;
+  transform: rotateY(180deg);
+  animation: animation2 .5s;
+}
+
+div.klik.open {
+  position: fixed;
+  right: calc(10% + 30px);
+  bottom: 30px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: visible;
+  transform: rotateY(360deg);
+}
+
+.fa-arrow-alt-circle-right {
+  font-size: 40px;
+  color: red;
+}
+
+.headerdiv {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: roboto;
+}
+
+span {
+  display: inline-block;
+  margin: 20px 0 20px 0;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  font-size: 17px;
+  width: 100%;
+  transition: .5s;
+  color: white;
+  cursor: pointer;
+  pointer-events: painted;
+  line-height: 20px;
+}
+
+a:hover {
+  background-color: rgb(255, 58, 58);
+}
+
+@keyframes animation {
+  0% {
+    right: -10%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    right: 0;
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    right: calc(10% + 30px);
+    transform: rotateY(360deg);
+  }
+}

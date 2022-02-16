@@ -1,0 +1,78 @@
+<div class="wrap-out">
+  <div class="wrap-in">
+    <ul>
+      <li>
+        <div>
+          <div class="divider2 div-transparent2"></div>
+        </div><a routerLink="description">O przychodni</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+      <li><a class="specjalizacje">Specializacje</a>
+          <div>
+            <div class="divider div-transparent"></div>
+          </div>
+          <ul class="wrapin">
+            <li><a routerLink="specialities/cardiology">Kardiologia</a></li>
+            <li><a routerLink="specialities/laryngology">Laryngologia</a></li>
+            <li><a routerLink="specialities/stomatology">Stomatologia</a></li>
+            <li><a routerLink="specialities/neurology">Neurologia</a></li>
+            <li><a routerLink="specialities/ophthalmology">Okulistyka</a></li>
+          </ul>
+      </li>
+      <li style="max-width: 200px;"><a class="lekarze">Nasi lekarze</a>
+          <div>
+            <div class="divider div-transparent"></div>
+          </div>
+          <ul class="wrapin">
+            <li><a routerLink="doctors/first-cardiologist">Dr Heart First</a></li>
+            <li><a routerLink="doctors/second-cardiologist">Dr Heart Second</a></li>
+            <li><a routerLink="doctors/first-laryngologist">Dr Ear First</a></li>
+            <li><a routerLink="doctors/second-laryngologist">Dr Ear Second</a></li>
+            <li><a routerLink="doctors/first-stomatologist">Dr Tooth First</a></li>
+            <li><a routerLink="doctors/second-stomatologist">Dr Tooth Second</a></li>
+            <li><a routerLink="doctors/first-neurologist">Dr Brain First</a></li>
+            <li><a routerLink="doctors/second-neurologist">Dr Brain Second</a></li>
+            <li><a routerLink="doctors/first-ophthalmologist">Dr Eye First</a></li>
+            <li><a routerLink="doctors/second-ophthalmologist">Dr Eye Second</a></li>
+          </ul>
+      </li>
+      <li><a class="badania">Badania obrazowe</a>
+          <div>
+            <div class="divider div-transparent"></div>
+          </div>
+          <ul class="wrapin">
+            <li><a routerLink="examinations/roentgen">RTG</a></li>
+            <li><a routerLink="examinations/computed-tomography">Tomografia - CT</a></li>
+            <li><a routerLink="examinations/magnetic-resonance-imaging">Rezonans - MRI</a></li>
+          </ul>
+      </li>
+      <li><a routerLink="/registration-doctor">Zapis na wizytę</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+      <li><a routerLink="/registration-imaging">Zapis na badanie</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+      <li><a routerLink="/contact">Kontakt</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+      <li *ngIf="!isAuthenticated" style="width: 80px;"><a href="#" class="last">Logowanie</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+      <li *ngIf="isAuthenticated" style="width: 80px;"><a href="#" (click)="onLogout()" class="last">Wyloguj</a>
+        <div>
+          <div class="divider div-transparent"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

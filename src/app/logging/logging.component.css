@@ -1,0 +1,85 @@
+div {
+    background-color: transparent;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    margin-top: 3px;
+}
+
+img {
+    width: 390px;
+    margin: 90px 0 0 240px;
+    z-index: -1;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapout {
+    display: flex;
+}
+
+.wrapin {
+    display: block;
+    margin: 200px 0 0 160px;
+}
+
+.wrapauth {
+    width: 312px;
+    text-align: left;
+    margin-top: 63px;
+}
+
+.wrapauth label {
+    font-size: 14px;
+    font-family: arial;
+    font-weight: 700;
+}
+
+.inputauth {
+    width: 298px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.buttonauth {
+    width: 150px;
+    font-family: roboto;
+    background-color: rgb(14, 163, 255);
+    padding: 5px;
+    border-color: rgb(14, 163, 255);
+    border-radius: 4px;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    font-size: 24px;
+    top: 460px;
+    left: 1010px;
+    width: 310px;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.errorDiv {
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 4px;
+    width: 300px;
+    top: 560px;
+    left: 1010px;
+    padding: 5px;
+    margin-top: -30px;
+    background-color: rgb(255, 58, 58);
+    color: white;
+}
+
+.buttonwrap {
+    display: flex;
+    min-width: 600px;
+}

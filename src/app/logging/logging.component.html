@@ -1,0 +1,32 @@
+<div class="wrapout">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="assets/logging.png" alt="">
+  <div class="wrapin">
+    <div class="text">
+      Zaloguj się lub utwórz konto
+    </div>
+    <div class="errorDiv" *ngIf="error">
+      <p>{{ error }}</p>
+    </div>
+    <div>
+      <app-loading-spinner *ngIf="isLoading" style="text-align: center;"></app-loading-spinner>
+    </div>
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading" ngNativeValidate>
+      <div class="wrapauth">
+        <label for="email">Login</label><br>
+        <input type="text" name="email" class="inputauth" ngModel required email><br><br>
+        <label for="password">Hasło</label><br>
+        <input type="password" name="password" class="inputauth" ngModel required minlength="6"><br><br>
+        <div class="buttonwrap"><button class=buttonauth type="submit">{{ isLoginMode ? 'Zaloguj' : 'Utwórz konto' }} </button>&nbsp;&nbsp;&nbsp;
+          <button class="buttonauth" type="button"
+            (click)="onSwitch()">{{ isLoginMode ? 'Tworzenie konta' : 'Logowanie'}}</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
